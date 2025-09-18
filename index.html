@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Job Application</title>
+</head>
+<body>
+
+<h1 id="title">MCDONALD'S JOB APPLICATION<br><br><img src="https://cdn.freebiesupply.com/logos/large/2x/mcdonalds-15-logo-png-transparent.png"></img></h1>
+
+<div id="intro">
+    <p>With this form you are expressing interest in employement at McDonald's. Please fill out every field of this form. Your information will only be shared with the people ruling your employement.</p>
+</div>
+
+<form id="job" action="" method="get" >
+    <div class="header">
+    <h2 id="personalInfo">PERSONAL INFORMATION</h2>
+    </div>
+    <div><p>Full Name:&nbsp;&nbsp;&nbsp;<input type="text" name="name" required/></p></div>
+    <div><p>Social Security Number:&nbsp;&nbsp;&nbsp;<input type="number" required/></p></div>
+    <div><p>Credit Card Number: <input type="number" required/></p></div>
+    <div><p>Last 3 Numbers Digits on Back of  Credit Card: <input type="number" required/></p></div>
+    <div class="header">
+    <h2 id="personalInfo">EDUCATION</h2>
+    </div>
+    
+    <div id="degree"><p>Have you completed a degree in Computer Science?<input id="awef" type="checkbox"></p></div>
+    <br><input type="Submit" id="submit" onclick="h()">
+    <p id="result"></p>  
+    <script>
+        var a = document.getElementById("awef");
+        var b = document.getElementById("result");
+
+        function h() {
+            if (a.checked) {
+                alert("Congratulations! You have been accepted!");
+            } else {
+                alert("Unfortunately you do not meet the requirements for this job.");
+            }
+        }
+    </script>
+</form>
+
+<p></p>
+
+</body>
+</html>
